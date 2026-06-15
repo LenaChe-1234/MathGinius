@@ -12,6 +12,7 @@ export default function LangPage() {
         <span className="eyebrow">Langgymnasium</span>
         <h1>{t.gymi.langTitle}</h1>
         <p>{t.track.topicsSubtitle}</p>
+        <p className={s.description}>{t.track.langDescription}</p>
       </div>
 
       <div className={s.grid}>

@@ -10,14 +10,14 @@ export default function HomePage() {
         <h1 className={s.heroTitle}>{t.home.title}</h1>
         <p className={s.heroSub}>{t.home.subtitle}</p>
         <div className={s.heroCta}>
-          <Link href="/kurz" className="btn-primary">{t.home.openKurz}</Link>
-          <Link href="/lang" className="btn-secondary">{t.home.openLang}</Link>
+          <Link href="/kurz" className={s.kurzButton}>{t.home.openKurz}</Link>
+          <Link href="/lang" className={s.langButton}>{t.home.openLang}</Link>
         </div>
       </section>
 
       <section className={s.cards}>
-        <Link href="/kurz" className={s.card}>
-          <div className={s.cardIcon} style={{ background: "var(--primary)" }}>
+        <Link href="/kurz" className={`${s.card} ${s.kurzCard}`}>
+          <div className={s.cardIcon}>
             <span>K</span>
           </div>
           <div className={s.cardBody}>
@@ -32,8 +32,8 @@ export default function HomePage() {
           </div>
         </Link>
 
-        <Link href="/lang" className={s.card}>
-          <div className={s.cardIcon} style={{ background: "var(--secondary)" }}>
+        <Link href="/lang" className={`${s.card} ${s.langCard}`}>
+          <div className={s.cardIcon}>
             <span>L</span>
           </div>
           <div className={s.cardBody}>
@@ -41,10 +41,10 @@ export default function HomePage() {
             <p className={s.cardDesc}>{t.gymi.langDesc}</p>
             <div className={s.pills}>
               {t.gymi.langPillars.map((p) => (
-                <span key={p} className={s.pill} style={{ borderColor: "var(--secondary)", color: "var(--secondary)" }}>{p}</span>
+                <span key={p} className={s.pill}>{p}</span>
               ))}
             </div>
-            <span className={s.cardCta} style={{ color: "var(--secondary)" }}>{t.gymi.open} →</span>
+            <span className={s.cardCta}>{t.gymi.open} →</span>
           </div>
         </Link>
       </section>

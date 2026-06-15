@@ -81,6 +81,24 @@
   background: rgba(30, 136, 229, 0.06);
 }
 
+.navKurz {
+  color: var(--secondary);
+}
+
+.navKurz:hover {
+  color: var(--secondary-dark);
+  background: rgba(31, 165, 140, 0.08);
+}
+
+.navLang {
+  color: var(--primary);
+}
+
+.navLang:hover {
+  color: var(--primary-dark);
+  background: rgba(30, 136, 229, 0.08);
+}
+
 .controls {
   display: flex;
   align-items: center;

@@ -12,6 +12,7 @@ export default function KurzPage() {
         <span className="eyebrow">Kurzgymnasium</span>
         <h1>{t.gymi.kurzTitle}</h1>
         <p>{t.track.topicsSubtitle}</p>
+        <p className={s.description}>{t.track.kurzDescription}</p>
       </div>
 
       <div className={s.grid}>

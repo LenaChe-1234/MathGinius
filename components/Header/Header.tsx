@@ -24,8 +24,8 @@ export default function Header() {
 
         <nav className={s.nav} aria-label="Hauptnavigation">
           <Link href="/gymi" className={s.navLink}>{t.nav.exams}</Link>
-          <Link href="/kurz" className={s.navLink}>{t.nav.kurz}</Link>
-          <Link href="/lang" className={s.navLink}>{t.nav.lang}</Link>
+          <Link href="/kurz" className={`${s.navLink} ${s.navKurz}`}>{t.nav.kurz}</Link>
+          <Link href="/lang" className={`${s.navLink} ${s.navLang}`}>{t.nav.lang}</Link>
         </nav>
 
         <div className={s.controls}>
