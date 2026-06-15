@@ -4,13 +4,6 @@
   gap: 20px;
 }
 
-.description {
-  max-width: 760px;
-  margin-top: 12px;
-  color: var(--text-soft);
-  line-height: 1.7;
-}
-
 .card {
   background: var(--surface-strong);
   border: 1px solid var(--border);

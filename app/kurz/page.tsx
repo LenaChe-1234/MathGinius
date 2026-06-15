@@ -12,10 +12,10 @@ export default function KurzPage() {
         <span className="eyebrow">Kurzgymnasium</span>
         <h1>{t.gymi.kurzTitle}</h1>
         <p>{t.track.topicsSubtitle}</p>
-        <p className={s.description}>{t.track.kurzDescription}</p>
+        <p className="track-description">{t.track.kurzDescription}</p>
       </div>
 
-      <div className={s.grid}>
+      <div className={`track-card-grid ${s.grid}`}>
         {KURZ_TOPICS.map((topic) => (
           <Link key={topic.slug} href={`/kurz/${topic.slug}`} className={s.card}>
             <h3 className={s.cardTitle}>{topic.title_de}</h3>

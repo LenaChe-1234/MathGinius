@@ -12,10 +12,10 @@ export default function LangPage() {
         <span className="eyebrow">Langgymnasium</span>
         <h1>{t.gymi.langTitle}</h1>
         <p>{t.track.topicsSubtitle}</p>
-        <p className={s.description}>{t.track.langDescription}</p>
+        <p className="track-description">{t.track.langDescription}</p>
       </div>
 
-      <div className={s.grid}>
+      <div className={`track-card-grid ${s.grid}`}>
         {LANG_TOPICS.map((topic) => (
           <Link key={topic.slug} href={`/lang/${topic.slug}`} className={s.card}>
             <h3 className={s.cardTitle}>{topic.title_de}</h3>
