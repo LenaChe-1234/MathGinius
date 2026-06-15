@@ -8,11 +8,12 @@ const KURZ_TOPICS = TOPIC_CONFIGS.filter((topic) => topic.track === "kurz");
 export default function KurzPage() {
   return (
     <div>
-      <div className="section-heading section-block">
-        <span className="eyebrow">Kurzgymnasium</span>
+      <div className={`section-heading section-block ${s.intro}`}>
         <h1>{t.gymi.kurzTitle}</h1>
-        <p>{t.track.topicsSubtitle}</p>
-        <p className={s.description}>{t.track.kurzDescription}</p>
+        <div className={s.textBox}>
+          <p>{t.track.kurzDescription}</p>
+          <p className={s.topicPrompt}>{t.track.topicsSubtitle}</p>
+        </div>
       </div>
 
       <div className={s.grid}>

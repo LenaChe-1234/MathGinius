@@ -8,11 +8,12 @@ const LANG_TOPICS = TOPIC_CONFIGS.filter((topic) => topic.track === "lang");
 export default function LangPage() {
   return (
     <div>
-      <div className="section-heading section-block">
-        <span className="eyebrow">Langgymnasium</span>
+      <div className={`section-heading section-block ${s.intro}`}>
         <h1>{t.gymi.langTitle}</h1>
-        <p>{t.track.topicsSubtitle}</p>
-        <p className={s.description}>{t.track.langDescription}</p>
+        <div className={s.textBox}>
+          <p>{t.track.langDescription}</p>
+          <p className={s.topicPrompt}>{t.track.topicsSubtitle}</p>
+        </div>
       </div>
 
       <div className={s.grid}>
