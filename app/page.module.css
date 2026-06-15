@@ -36,6 +36,37 @@
   margin-top: 8px;
 }
 
+.kurzButton,
+.langButton {
+  border-radius: var(--radius-md);
+  padding: 12px 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.kurzButton {
+  background: var(--secondary);
+  color: #fff;
+  border: 1.5px solid var(--secondary);
+}
+
+.kurzButton:hover {
+  background: var(--secondary-dark);
+  border-color: var(--secondary-dark);
+}
+
+.langButton {
+  background: var(--primary);
+  color: #fff;
+  border: 1.5px solid var(--primary);
+}
+
+.langButton:hover {
+  background: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
 /* ── Track cards ── */
 .cards {
   display: grid;
@@ -78,6 +109,14 @@
   font-weight: 700;
 }
 
+.kurzCard .cardIcon {
+  background: var(--secondary);
+}
+
+.langCard .cardIcon {
+  background: var(--primary);
+}
+
 .cardBody {
   display: flex;
   flex-direction: column;
@@ -106,13 +145,21 @@
   font-weight: 600;
   padding: 3px 10px;
   border-radius: 100px;
-  border: 1.5px solid var(--primary);
+  border: 1.5px solid currentColor;
+}
+
+.kurzCard .pill,
+.kurzCard .cardCta {
+  color: var(--secondary);
+}
+
+.langCard .pill,
+.langCard .cardCta {
   color: var(--primary);
 }
 
 .cardCta {
   font-size: 0.875rem;
   font-weight: 600;
-  color: var(--primary);
   margin-top: 4px;
 }

@@ -4,6 +4,13 @@
   gap: 20px;
 }
 
+.description {
+  max-width: 760px;
+  margin-top: 12px;
+  color: var(--text-soft);
+  line-height: 1.7;
+}
+
 .card {
   background: var(--surface-strong);
   border: 1px solid var(--border);
@@ -39,6 +46,6 @@
 .start {
   font-size: 0.875rem;
   font-weight: 600;
-  color: var(--secondary);
+  color: var(--primary);
   margin-top: 4px;
 }

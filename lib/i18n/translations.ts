@@ -31,6 +31,10 @@ export const translations = {
     track: {
       topicsTitle: "Practice topics",
       topicsSubtitle: "Choose a topic and start with real ZAP-style exercises.",
+      kurzDescription:
+        "Damit Schülerinnen und Schüler nach der 2. oder 3. Klasse der Sekundarschule das Kurzgymnasium oder die Handelsmittelschule (HMS) besuchen können, müssen sie die zentrale Aufnahmeprüfung bestehen. Ein ehrgeiziges Ziel, denn dafür muss der Stoff in Deutsch und Mathematik der Sekundarstufe überdurchschnittlich gut sitzen.",
+      langDescription:
+        "Die zentrale Aufnahmeprüfung ist ein wichtiger Schritt auf dem Weg ins Gymnasium. Um diese erfolgreich zu meistern, sind solide Kenntnisse der Inhalte aus der 6. Primarklasse sowie eine gute Vorbereitung entscheidend. LearningCulture begleitet Schülerinnen und Schüler mit einem bewährten Lernkonzept dabei, fachliche Kompetenzen zu stärken und das Vertrauen in die eigenen Fähigkeiten zu entwickeln.",
       startTopic: "Start exercises",
       canvasTitle: "Simplify expressions",
       canvasDesc:
@@ -97,6 +101,10 @@ export const translations = {
     track: {
       topicsTitle: "Übungsthemen",
       topicsSubtitle: "Wähle ein Thema und starte mit echten ZAP-Aufgaben.",
+      kurzDescription:
+        "Damit Schülerinnen und Schüler nach der 2. oder 3. Klasse der Sekundarschule das Kurzgymnasium oder die Handelsmittelschule (HMS) besuchen können, müssen sie die zentrale Aufnahmeprüfung bestehen. Ein ehrgeiziges Ziel, denn dafür muss der Stoff in Deutsch und Mathematik der Sekundarstufe überdurchschnittlich gut sitzen.",
+      langDescription:
+        "Die zentrale Aufnahmeprüfung ist ein wichtiger Schritt auf dem Weg ins Gymnasium. Um diese erfolgreich zu meistern, sind solide Kenntnisse der Inhalte aus der 6. Primarklasse sowie eine gute Vorbereitung entscheidend. LearningCulture begleitet Schülerinnen und Schüler mit einem bewährten Lernkonzept dabei, fachliche Kompetenzen zu stärken und das Vertrauen in die eigenen Fähigkeiten zu entwickeln.",
       startTopic: "Aufgaben starten",
       canvasTitle: "Terme vereinfachen",
       canvasDesc:
