@@ -1,3 +1,21 @@
+.page {
+  position: relative;
+  isolation: isolate;
+  min-height: calc(100vh - 160px);
+}
+
+.page::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 12% 8%, rgba(124, 199, 255, 0.28), transparent 32%),
+    radial-gradient(circle at 88% 12%, rgba(31, 165, 140, 0.24), transparent 30%),
+    linear-gradient(180deg, #eef9ff 0%, #e6f8f2 48%, #f3fffb 100%);
+}
+
 .intro {
   width: min(1700px, calc(100vw - 100px));
   max-width: none;
@@ -9,9 +27,9 @@
 
 .intro h1 {
   color: var(--secondary);
-  font-size: clamp(1.55rem, 3vw, 2.35rem);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  font-size: clamp(2rem, 4vw, 3.1rem);
+  letter-spacing: 0;
+  text-transform: none;
 }
 
 .textBox {
@@ -47,10 +65,10 @@
 }
 
 .card {
-  background: rgba(31, 165, 140, 0.08);
-  border: 1px solid rgba(31, 165, 140, 0.3);
+  background: rgba(31, 165, 140, 0.13);
+  border: 1px solid rgba(31, 165, 140, 0.38);
   border-radius: var(--radius-lg);
-  box-shadow: 0 16px 36px rgba(21, 120, 102, 0.1);
+  box-shadow: 0 16px 36px rgba(21, 120, 102, 0.14);
   padding: 22px 26px;
   display: flex;
   flex-direction: column;
