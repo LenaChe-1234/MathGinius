@@ -7,7 +7,7 @@ const KURZ_TOPICS = TOPIC_CONFIGS.filter((topic) => topic.track === "kurz");
 
 export default function KurzPage() {
   return (
-    <div>
+    <div className={s.page}>
       <div className={`section-heading section-block ${s.intro}`}>
         <h1>{t.gymi.kurzTitle}</h1>
         <div className={s.textBox}>

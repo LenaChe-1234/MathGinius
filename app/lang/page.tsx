@@ -7,7 +7,7 @@ const LANG_TOPICS = TOPIC_CONFIGS.filter((topic) => topic.track === "lang");
 
 export default function LangPage() {
   return (
-    <div>
+    <div className={s.page}>
       <div className={`section-heading section-block ${s.intro}`}>
         <h1>{t.gymi.langTitle}</h1>
         <div className={s.textBox}>
